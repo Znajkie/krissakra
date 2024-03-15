@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="contact.css">
+  <link rel="icon" type="image/x-icon" href="./assets/logo/favicon-32x32.png">
+  <script defer src="https://unpkg.com/i18next@latest/dist/umd/i18next.min.js"></script>
+  <script defer src="main.js"></script>
+  <script defer src="translation.js"></script>
+  <script defer type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+  <title>Krissäkra</title>
+</head>
+<body>
+  <header class="header">
+   <img class="hero" src="./assets/logo/KRIS(1).png"><img/>
+   <nav class="site-nav">
+      <input id="menu-toggle" type="checkbox" />
+      <label class='menu-button-container' for="menu-toggle">
+      <div class='menu-button'></div>
+    </label>
+    <ul class="menu">
+        <li class="underline"><a href="#" data-i18n="mainLink1">BRF</a></li>
+        <li class="underline"><a href="#" data-i18n="mainLink2">Företag</a></li>
+        <li class="underline"><a href="#" data-i18n="mainLink3">Samfälligheter</a></li>
+        <li class="underline"><a href="#" data-i18n="mainLink4">Villaägarna</a></li>
+        <li class="underline"><a href="#" data-i18n="mainLink5">Samarbeten</a></li>
+        <li class="underline"><button id="languageBtn" class="underline" onclick="changeLanguage('en')">In English</button></li>
+    </ul>
+  </header>
+          </nav>
+        </header>
+           <div class="container"> 
+      <div class="os-phrases" id="os-phrases">
+  <!-- <div id="subtitel"> -->
+    <h2 class="subtitel-text" data-i18n="subtitleText">Trygg idag, förberedd imorgon</h2>
+  </div>
+  </div>
+  <section class="about">
+  <h2 class="about__titel" data-i18n="aboutTitle">Skräddarsydd beredskap och säkerhet planering för dig, företag och förening.
+    <p>Vår kundskap sträcker sig över ett brett område.</p>
+  </h2>
+
+    <div class="about-content">
+      <div class="about-list">
+        <ul>
+          <li class="hover"><span class="checkmark">✔</span>Säkerhetsanalyser – Utvärdering och bedömning av potentiella risker.</li>
+          <li class="hover"><span class="checkmark">✔</span>Krisplanering</span> – Utveckling av handlingsplaner för olika krisscenarier.</li>
+          <li class="hover"><span class="checkmark">✔</span>Utbildning och övningar</span> – Förberedelse och träning av personal för effektiv respons.</li>
+          <li class="hover"><span class="checkmark">✔</span>Nödkommunikationssystem</span> – Säkerställande av robusta kommunikationskanaler.</li>
+          <li class="hover"><span class="checkmark">✔</span>Samarbete med myndigheter</span> – Etablering av nätverk och samarbetsprotokoll.</li>
+          <li class="hover"><span class="checkmark">✔</span>Tillgång till reservresurser</span> – Försäkrar att resurser finns tillgängliga vid behov.</li>
+          <li class="hover"><span class="checkmark">✔</span>Efterlevnad och standarder</span> – Uppfyller och överträffar lagstadgade krav.</li>
+          <li class="hover"><span class="checkmark">✔</span>Kontinuerlig riskövervakning</span> – Ständig övervakning och uppdatering av säkerhetsåtgärder för att möta förändrande hotbilder.</li>
+        </ul>
+      </div>
+    <div class="about-image">
+     <div class="about-img"></div>
+    </div>
+  </section>
+
+<section class="slider">
+  <h3 class="slider__titel">Tjänster</h3>
+  <h2 class="subtitel-text">Skräddarsydd krisplanering för ert behov</h2>
+  <div class="slider__text"></div>
+</section>
+
+
+<section class="offer">
+  <ul class="offer__content">
+    <li class="offer__svg"></li>
+    <li><h3>Automatisering</h3></li>
+    <li class="offer__text">
+      Vi planerar och genomför olika evenemang för att främja lokal turism och skapa positiva upplevelser för invånare och besökare.
+    </li>
+  </ul>
+  <ul class="offer__content">
+    <li class="offer__svg"></li>
+    <li><h3>Automatisering</h3></li>
+    <li class="offer__text">
+      Vi hjälper till med strategisk kommunikation och varumärkesbyggande för att stärka lokal sammanhållning och tillväxt.
+    </li>
+  </ul>
+  <ul class="offer__content">
+    <li class="offer__svg"></li>
+    <li><h3>Automatisering</h3></li>
+    <li class="offer__text">Vi erbjuder expert hjälp för föreningar.</li>
+  </ul>
+  <button class="booking"></button>
+</section>
+
+<section class="history">
+  <h3 class="hisotry__header" data-i18n="hisotry__headerText">VÅR HISTORIA</h3>
+  <p class="">Krishantering och krisplaner är avgörande komponenter för både individer 
+    och föreningar för att effektivt hantera oförutsedda situationer.
+     Dessa strategier syftar till att minimera skadan av potentiella 
+     kriser och säkerställa en snabb återhämtning. 
+    Genom att utveckla robusta krisplaner kan individer och organisationer 
+    förbereda sig för olika scenarier och därmed minska påverkan av negativa händelser.
+  </p>
+</section>
+        <!-- <div class="video-main">
+          <video class="main-video" controls width="500">
+            <source src="./assets/video/a.mp4" type="video/mp4" />
+          </video>
+        </div> -->
+<section class="contact__wrapper">
+  <div class="contact-form-container">
+        <p>Krissäkra Svergie AB</p>
+        <a href="mailto:explosivfibres@hotmail.com?subject=Kund%20Fråga&body=Krissäkra%20 ">Skicka meddelande</a>
+        <form id="contactForm" action="mailto:explosivfibres@hotmail.com" method="post" enctype="text/plain">
+            <button class="close-btn">X</button>
+            <div class="input-group">
+                <input type="text" id="name" name="namn" required placeholder="Ditt Namn *">
+            </div>
+            <div class="input-group">
+                <input type="email" id="email" name="email " required placeholder="Din Email *">
+            </div>
+            <div class="input-group">
+                <input type="tel" id="phone" name="telefon " placeholder="Telefon nummer *">
+            </div>
+            <div class="input-group">
+                <textarea id="message" name="meddelande " required placeholder="Din fråga *"></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Skicka</button>
+        </form>
+    </div>
+</section>
+
+    <footer class="footer">
+      <div class="footer__logo">
+        <p>© 2024 Krissäkra. All rights reserved.</p>
+        <button class="btn-logo"><img src="./assets/logo/svg/facebook-circle-svgrepo-com.svg" width="40" height="40" /></button>
+        <button class="btn-logo"><img src="./assets/logo/svg/instagram-svgrepo-com.svg" width="40" height="40" /></button>
+        <button class="btn-logo, email"><img src="./assets/logo/svg/email-envelope-letter-mail-message-svgrepo-com.svg" width="40" height="40" /></button>
+        <button class="btn-logo"><img src="./assets/logo/tiktok.png" width="40" height="40" /></button>
+        <button class="btn-logo"><img src="./assets/logo/svg/call-192-svgrepo-com.svg" width="40" height="35" /></button>
+      </div>
+    </footer>
+</body>
+</html>
