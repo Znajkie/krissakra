@@ -9,8 +9,8 @@ i18next.init(
           mainLink1: 'Co-op',
           mainLink2: 'Busniess',
           mainLink3: 'Commons',
-          mainLink4: 'Homeowners',
-          mainLink5: 'Collaborations',
+          mainLink4: 'About Krissäkra',
+          mainLink5: 'Contact',
           mainLink6: 'Related links',
           subtitleText: 'Secure today, prepared tomorrow',
           aboutTitle:
@@ -24,8 +24,8 @@ i18next.init(
           mainLink1: 'BRF',
           mainLink2: 'Företag',
           mainLink3: 'Samfälligheter',
-          mainLink4: 'Villaägare',
-          mainLink5: 'Samarbeten',
+          mainLink4: 'Om Krissäkra',
+          mainLink5: 'Kontakta',
           mainLink6: 'Relaterade länkar',
           subtitleText: 'Trygg idag, förberedd imorgon',
           aboutTitle:

@@ -5,17 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="index.css">
   <link rel="stylesheet" href="contact.css">
+  <link rel="stylesheet" href="textAnimation.css">
   <link rel="icon" type="image/x-icon" href="./assets/logo/favicon-32x32.png">
   <script defer src="https://unpkg.com/i18next@latest/dist/umd/i18next.min.js"></script>
   <script defer src="main.js"></script>
   <script defer src="translation.js"></script>
-  <script defer type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
   <title>Krissäkra</title>
 </head>
 <body>
   <header class="header">
-   <img class="hero" src="./assets/logo/KRIS(1).png"><img/>
+   <img class="hero" src="./assets/logo/KRIS(1).png"/>
    <nav class="site-nav">
       <input id="menu-toggle" type="checkbox" />
       <label class='menu-button-container' for="menu-toggle">
@@ -25,20 +24,21 @@
         <li class="underline"><a href="#" data-i18n="mainLink1">BRF</a></li>
         <li class="underline"><a href="#" data-i18n="mainLink2">Företag</a></li>
         <li class="underline"><a href="#" data-i18n="mainLink3">Samfälligheter</a></li>
-        <li class="underline"><a href="#" data-i18n="mainLink4">Villaägarna</a></li>
-        <li class="underline"><a href="#" data-i18n="mainLink5">Samarbeten</a></li>
+        <li class="underline"><a href="#about" data-i18n="mainLink4">Om Krissäkra</a></li>
+        <li class="underline"><a class="email"href="#" data-i18n="mainLink5">Kontakta</a></li>
         <li class="underline"><button id="languageBtn" class="underline" onclick="changeLanguage('en')">In English</button></li>
     </ul>
+    </nav>
   </header>
-          </nav>
-        </header>
+          
            <div class="container"> 
-      <div class="os-phrases" id="os-phrases">
   <!-- <div id="subtitel"> -->
     <h2 class="subtitel-text" data-i18n="subtitleText">Trygg idag, förberedd imorgon</h2>
+    <h2 class="subtitel-text__bottom">Beredskap och sammanhållning</h2>
+     <h2 class="subtitel-text__bottom">Krishantering och krisanalys</h2>
   </div>
-  </div>
-  <section class="about">
+  <!-- </div> -->
+  <!-- <section class="about">
   <h2 class="about__titel" data-i18n="aboutTitle">Skräddarsydd beredskap och säkerhet planering för dig, företag och förening.
     <p>Vår kundskap sträcker sig över ett brett område.</p>
   </h2>
@@ -59,70 +59,150 @@
     <div class="about-image">
      <div class="about-img"></div>
     </div>
+  </section> -->
+
+<div class="blank"></div>
+   
+  <section class="section-secondary">
+    <div>
+    <img class="section-secondary__img1" src="./assets/images/small/k8-B8e8PAJ9JRM-unsplash (1).jpg"/>
+     <span class="image-link-wrapper"><a href="#section1">Go to Section 1</a></span>
+    </div>
+    <div>
+    <img class="section-secondary__img2" src="./assets/images/small/linus-mimietz-F7rpMDvkB1U-unsplash.jpg"/>
+     <span class="image-link-wrapper"><a href="#section2">Go to Section 2</a></span>
+    </div>
+    <div>
+    <img class="section-secondary__img3" src="./assets/images/small/sergey-zolkin-_UeY8aTI6d0-unsplash.jpg"/>
+     <span class="image-link-wrapper"><a href="#section3">Go to Section 2</a></span>
+    </div>
   </section>
 
-<section class="slider">
-  <h3 class="slider__titel">Tjänster</h3>
-  <h2 class="subtitel-text">Skräddarsydd krisplanering för ert behov</h2>
-  <div class="slider__text"></div>
-</section>
 
 
-<section class="offer">
-  <ul class="offer__content">
-    <li class="offer__svg"></li>
-    <li><h3>Automatisering</h3></li>
-    <li class="offer__text">
-      Vi planerar och genomför olika evenemang för att främja lokal turism och skapa positiva upplevelser för invånare och besökare.
-    </li>
-  </ul>
-  <ul class="offer__content">
-    <li class="offer__svg"></li>
-    <li><h3>Automatisering</h3></li>
-    <li class="offer__text">
-      Vi hjälper till med strategisk kommunikation och varumärkesbyggande för att stärka lokal sammanhållning och tillväxt.
-    </li>
-  </ul>
-  <ul class="offer__content">
-    <li class="offer__svg"></li>
-    <li><h3>Automatisering</h3></li>
-    <li class="offer__text">Vi erbjuder expert hjälp för föreningar.</li>
-  </ul>
-  <button class="booking"></button>
+<!!-- //anchor -->
+<div>
+<section id="section1" class="target-section">
+  <h2>Section 1</h2>
+  <p>MJJAA</p>
 </section>
 
-<section class="history">
-  <h3 class="hisotry__header" data-i18n="hisotry__headerText">VÅR HISTORIA</h3>
-  <p class="">Krishantering och krisplaner är avgörande komponenter för både individer 
-    och föreningar för att effektivt hantera oförutsedda situationer.
-     Dessa strategier syftar till att minimera skadan av potentiella 
-     kriser och säkerställa en snabb återhämtning. 
-    Genom att utveckla robusta krisplaner kan individer och organisationer 
-    förbereda sig för olika scenarier och därmed minska påverkan av negativa händelser.
-  </p>
+<section id="section2" class="target-section">
+  <h2>Section 2</h2>
 </section>
+
+<section id="section3" class="target-section">
+  <h2>Section 3</h2>
+</section>
+</div>
+
+<section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">About</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <ul class="timeline">
+                        <li>
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>2024 Q1</h4>
+                                    <h4 class="subheading">Vår start</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted-left"><strong>Krissäkra Sverige AB</strong></br> Vi myntar ordet Samberedskap, nytt ord och ett sätt att se på vår gemensamma säkerhet.
+                                     Grundat på insikten att verklig krisberedskap kräver mer än bara individuella insatser, det kräver en kollektiv ansträngning. <br/>Det kräver Samberedskap.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline-inverted">
+                            <div class="timeline-imagee" src="./assets/images/small/sergey-zolkin-_UeY8aTI6d0-unsplash.jpg">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>2024 Q2</h4>
+                                    <h4 class="subheading">Analys och krissäkra</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>2025</h4>
+                                    <h4 class="subheading">Transition to Full Service</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline-inverted">
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>July 2014</h4>
+                                    <h4 class="subheading">Phase Two Expansion</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline-inverted">
+                            <div class="timeline-image">
+                                <h4>Be Part
+                                    <br>Of Our
+                                    <br>Story!</h4>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
         <!-- <div class="video-main">
           <video class="main-video" controls width="500">
             <source src="./assets/video/a.mp4" type="video/mp4" />
           </video>
         </div> -->
+
+              <a id="nav-to-top" href="#">
+    <img src="./assets/svg/icons8-top-64.png" width="50" height="50" />
+</a>
 <section class="contact__wrapper">
+   
   <div class="contact-form-container">
-        <p>Krissäkra Svergie AB</p>
-        <a href="mailto:explosivfibres@hotmail.com?subject=Kund%20Fråga&body=Krissäkra%20 ">Skicka meddelande</a>
+    <button class="close-btn"><img src="./assets/svg/close-button-svgrepo-com.svg" width="40px"/></button>
+        <h2 id="form-h2">Krissäkra Svergie AB</h2>
+        <p>Skicka meddelande</p>
         <form id="contactForm" action="mailto:explosivfibres@hotmail.com" method="post" enctype="text/plain">
-            <button class="close-btn">X</button>
+           
             <div class="input-group">
-                <input type="text" id="name" name="namn" required placeholder="Ditt Namn *">
+                <input type="text" id="name" name="namn" required placeholder="Namn *">
             </div>
             <div class="input-group">
-                <input type="email" id="email" name="email " required placeholder="Din Email *">
+                <input type="email" id="email" name="email " required placeholder="exempel@exempel.se *">
             </div>
             <div class="input-group">
                 <input type="tel" id="phone" name="telefon " placeholder="Telefon nummer *">
             </div>
             <div class="input-group">
-                <textarea id="message" name="meddelande " required placeholder="Din fråga *"></textarea>
+                <textarea id="message" name="meddelande " required placeholder="Fråga *"></textarea>
             </div>
             <button type="submit" class="submit-btn">Skicka</button>
         </form>
@@ -130,13 +210,14 @@
 </section>
 
     <footer class="footer">
-      <div class="footer__logo">
-        <p>© 2024 Krissäkra. All rights reserved.</p>
+      <p class="footer-p">email: info@krissakra.se</p>
+      <p class="footer-p">© 2024 Krissäkra. All rights reserved.</p>
+      <!-- <div class="footer__logo">
         <button class="btn-logo"><img src="./assets/logo/svg/facebook-circle-svgrepo-com.svg" width="40" height="40" /></button>
         <button class="btn-logo"><img src="./assets/logo/svg/instagram-svgrepo-com.svg" width="40" height="40" /></button>
         <button class="btn-logo, email"><img src="./assets/logo/svg/email-envelope-letter-mail-message-svgrepo-com.svg" width="40" height="40" /></button>
         <button class="btn-logo"><img src="./assets/logo/tiktok.png" width="40" height="40" /></button>
-        <button class="btn-logo"><img src="./assets/logo/svg/call-192-svgrepo-com.svg" width="40" height="35" /></button>
+        <button class="btn-logo"><img src="./assets/logo/svg/call-192-svgrepo-com.svg" width="40" height="35" /></button> -->
       </div>
     </footer>
 </body>
