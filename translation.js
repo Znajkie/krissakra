@@ -6,13 +6,13 @@ i18next.init(
     resources: {
       en: {
         translation: {
-          mainLink1: 'Co-op',
-          mainLink2: 'Busniess',
-          mainLink3: 'Commons',
+          mainLink1: 'Home',
+          mainLink2: 'FAQ',
+          mainLink3: 'Services',
           mainLink4: 'About Krissäkra',
           mainLink5: 'Contact',
           mainLink6: 'Related links',
-          subtitleText: 'Secure today, prepared tomorrow',
+          subtitleText: 'Safe today, prepared tomorrow',
           aboutTitle:
             'Customized emergency and security planning for you, companies, and associations.',
           hisotry__headerText:
@@ -21,13 +21,13 @@ i18next.init(
       },
       sv: {
         translation: {
-          mainLink1: 'BRF',
-          mainLink2: 'Företag',
-          mainLink3: 'Samfälligheter',
+          mainLink1: 'Hem',
+          mainLink2: 'FAQ',
+          mainLink3: 'Tjänster',
           mainLink4: 'Om Krissäkra',
           mainLink5: 'Kontakta',
           mainLink6: 'Relaterade länkar',
-          subtitleText: 'Trygg idag, förberedd imorgon',
+          subtitleText: 'Trygg idag förberedd imorgon',
           aboutTitle:
             'Skräddarsydd beredskap och säkerhet planering för dig, företag och förening.',
           hisotry__headerText:
@@ -37,7 +37,6 @@ i18next.init(
     },
   },
   function (err, t) {
-    // Initialized and ready to go!
     updateContent();
   }
 );
@@ -58,10 +57,10 @@ function changeLanguage(lng) {
   function updateLanguageButtonText(currentLang) {
     const btn = document.getElementById('languageBtn');
     if (currentLang === 'sv') {
-      btn.innerText = 'In English';
+      btn.innerText = 'English';
       btn.setAttribute('onclick', "changeLanguage('en')");
     } else {
-      btn.innerText = 'På Svenska';
+      btn.innerText = 'Svenska';
       btn.setAttribute('onclick', "changeLanguage('sv')");
     }
   }
