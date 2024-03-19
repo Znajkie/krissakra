@@ -592,7 +592,9 @@ h3 {
 }
 
 .footer {
+   position: relative;
     display: flex;
+    height: 20rem;
     justify-content: center;
     background: #bbb8b8;
     /** byt */
@@ -601,6 +603,7 @@ h3 {
 }
 
 .footer-content {
+    margin-top: 2rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -626,11 +629,12 @@ h3 {
 }
 
 .krissakra-logo {
-    width: 180px; /* Logo size */
-    margin-right: 10px;
-    margin-top: 5rem;
-    padding-bottom: 1rem;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 180px; /* Logo size */
 }
+
 @media (max-width: 1838px) {
 .about-grid-container {
   justify-content: center;
@@ -795,6 +799,12 @@ h3 {
 
 /******* 650px  *******/
 @media (max-width: 650px) {
+
+  .krissakra-logo {
+  position: absolute;
+  width: 180px; /* Logo size */
+}
+
 
   .menu-button-container {
     display: flex;
