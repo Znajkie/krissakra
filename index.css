@@ -467,7 +467,7 @@ h1 {
 
 .product__container {
     color: rgb(0, 0, 0);
-    background: #eeeaeaf5;
+    background: rgb(170, 184, 194);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(5px);
 }
@@ -482,9 +482,9 @@ h1 {
 
 .product__wrapper {
     display: flex;
+    justify-content: center;
     gap: 40px;
     padding: 5rem;
-    justify-content: space-between;
 }
 
 .product__title {
@@ -505,6 +505,9 @@ h1 {
 .product__details {
   display: flex;
   width: 40rem;
+  padding: 2rem;
+  border-radius: 1rem;
+  background-color: rgba(36, 56, 63, 0.062);
   flex-direction: column;
   border-style: none;
   
@@ -746,6 +749,15 @@ h3 {
   .blank {
   padding-top: 31rem;
  }
+
+ .krissakra-logo {
+    margin-top: 2rem;
+    padding-bottom: 0rem;
+}
+
+  .footer-section__p {
+  padding-top: 2rem;
+}
 }
 
 /******* 768px  *******/
@@ -773,6 +785,11 @@ h3 {
  .about__img {
   height: 80%;
 }
+
+.footer-section__p {
+  padding-top: 2rem;
+}
+
 
 }
 
@@ -802,6 +819,10 @@ h3 {
         flex-direction: column;
         align-items: center;
     }
+
+  .footer-section__p {
+  min-width: 40rem;
+}
 }
 
 /******* 550px  *******/
@@ -811,6 +832,15 @@ h3 {
   font-size: 16px;
 }
 
+.about-grid-container {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.section-secondary {
+  flex-direction: column;
+  height: 40rem;
+}
   .hero {
     padding-top: 0.5rem;
     width: 80%;
@@ -827,4 +857,5 @@ h3 {
   .container p {
     font-size: 1.2rem;
   }
+
 }

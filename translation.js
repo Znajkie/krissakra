@@ -32,6 +32,16 @@ i18next.init(
             'Skräddarsydd beredskap och säkerhet planering för dig, företag och förening.',
           hisotry__headerText:
             'Krishantering och krisplaner är avgörande komponenter för både individer och föreningar för att effektivt hantera oförutsedda situationer. Dessa strategier syftar till att minimera skadan av potentiella kriser och säkerställa en snabb återhämtning. Genom att utveckla robusta krisplaner kan individer och organisationer förbereda sig för olika scenarier och därmed minska påverkan av negativa händelser.',
+          // products
+          productsSubtitleText1: 'Är du en okänd krislednings aktör?',
+          productsSubtitleText2:
+            'Samberedskap är inte enbart ett nytt ord, utan ett nytt sätt att tänka på',
+          productsSubtitleText3:
+            'Vår analys är mer än en plan för att hantera en eventuell kris.',
+          productsSubtitleText4:
+            'Förhindra, samarbeta och effektivt lösa situationer på egen hand',
+          productsSubtitleText5:
+            'Med våra samarbets partners kan vi även erbjuda hjärt och lung räddning, brandskydd på plats!',
         },
       },
     },

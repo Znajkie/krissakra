@@ -1,0 +1,63 @@
+body {
+    background-image: url('./assets/images/background/kallare.jpg');
+}
+
+.subtitel-text-products {
+    margin-top:8rem;
+}
+
+.products-grid-container {
+  display: flex;
+  flex-wrap: wrap;
+  scroll-margin-top: 10px;
+  padding-top: 10rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  padding-bottom: 5rem;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.products-grid-container2 {
+  display: flex;
+  flex-wrap: wrap;
+  scroll-margin-top: 10px;
+  padding-top: 0rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  padding-bottom: 5rem;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.products__section1 {
+  font-size: 18px;
+  margin: 0 auto;
+  font-family: 'WorkSans';
+}
+
+.products__title {
+  padding-bottom: 1rem;
+}
+
+.products__title1, .products__title2 {
+    padding-bottom: 2.2rem;
+}
+
+.products__title2 {
+    padding-top: 2rem;
+}
+
+.products__title, .products__p, .products__ul {
+  max-width: 60rem;
+}
+
+/******* 550px  *******/
+@media only screen and (max-width: 550px) {
+
+  .products-grid-container {
+    padding-top: 0rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+}
