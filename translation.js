@@ -40,8 +40,8 @@ i18next.init(
             'Vår analys är mer än en plan för att hantera en eventuell kris.',
           productsSubtitleText4:
             'Förhindra, samarbeta och effektivt lösa situationer på egen hand',
-          productsSubtitleText5:
-            'Med våra samarbets partners kan vi även erbjuda hjärt och lung räddning, brandskydd på plats!',
+          // productsSubtitleText5:
+          //   'Med våra samarbets partners kan vi även erbjuda hjärt och lung räddning, brandskydd på plats!',
         },
       },
     },
