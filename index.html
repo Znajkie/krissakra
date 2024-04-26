@@ -1,60 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="index.css">
-  <link rel="stylesheet" href="contact.css">
-  <link rel="stylesheet" href="textAnimation.css">
-  <link rel="icon" type="image/x-icon" href="./assets/logo/favicon-32x32.png">
-  <script defer src="https://unpkg.com/i18next@latest/dist/umd/i18next.min.js"></script>
-  <script defer src="main.js"></script>
-  <script defer src="translation.js"></script>
-  <title>Krissäkra</title>
-</head>
-<body>
-  <header class="header">
-   <img class="hero" src="./assets/logo/KRIS(1).png"/>
-    <nav class="site-nav">
-      <input id="menu-toggle" type="checkbox" />
-      <label class='menu-button-container' for="menu-toggle">
-        <div class='menu-button'></div>
-      </label>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="contact.css" />
+    <link rel="stylesheet" href="textAnimation.css" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="./assets/logo/favicon-32x32.png"
+    />
+    <script
+      defer
+      src="https://unpkg.com/i18next@latest/dist/umd/i18next.min.js"
+    ></script>
+    <script defer src="main.js"></script>
+    <script defer src="translation.js"></script>
+    <title>Krissäkra</title>
+  </head>
+  <body>
+    <header class="header">
+      <img class="hero" src="./assets/logo/KRIS(1).png" />
+      <nav class="site-nav">
+        <input id="menu-toggle" type="checkbox" />
+        <label class="menu-button-container" for="menu-toggle">
+          <div class="menu-button"></div>
+        </label>
         <ul class="menu">
-        <li class="underline"><a href="#" data-i18n="mainLink1">BRF</a></li>
-        <li class="underline"><a href="#" data-i18n="mainLink2">Företag</a></li>
-        <li class="underline"><a href="products.html" data-i18n="mainLink3">Produkter</a></li>
-        <li class="underline"><a href="#about" data-i18n="mainLink4">Om Krissäkra</a></li>
-        <li class="underline"><a class="email"href="#" data-i18n="mainLink5">Kontakta</a></li>
-        <li class="underline"><button id="languageBtn" class="underline" onclick="changeLanguage('en')">In English</button></li>
+          <li class="underline"><a href="#" data-i18n="mainLink1">Hem</a></li>
+          <li class="underline">
+            <a href="#krissakra" data-i18n="mainLink4">Varför Krissäkra?</a>
+          </li>
+          <li class="underline">
+            <a href="#about" data-i18n="mainLink2">Om oss</a>
+          </li>
+          <li class="underline">
+            <a class="email" href="#" data-i18n="mainLink5">Kontakta</a>
+          </li>
+          <li class="underline">
+            <button
+              id="languageBtn"
+              class="underline"
+              onclick="changeLanguage('en')"
+            >
+              In English
+            </button>
+          </li>
         </ul>
-    </nav>
-  </header>
-          
-    <div class="container"> 
-    <h2 class="subtitel-text" data-i18n="subtitleText">Trygg idag, förberedd imorgon</h2>
-    <h2 class="subtitel-text__bottom">Beredskap och sammanhållning</h2>
-     <h2 class="subtitel-text__bottom">Krishantering och krisanalys</h2>
+      </nav>
+    </header>
+
+    <div class="container">
+      <h2 class="subtitel-text" data-i18n="subtitleText">
+        Visste du att 80% av alla kriser var möjliga att förutse?
+      </h2>
+      <h2 class="subtitel-text__bottom" data-i18n="subtitleText2">
+        Krissäkra din förening idag, för en tryggare framtid imorgon!
+      </h2>
     </div>
     <div class="blank"></div>
-   
-<section id="about" class="about-grid-container">
-    <div class="about__section1" class="target-section">
-     <h2 class="about__header">Varför välja att Krissäkra?</h2>
-        <p class="about__p">Sverige är välutrustat för att hantera en rad kriser – från naturkatastrofer som bränder och översvämningar till pandemier.</p>
-        <p class="about__p">Men att hantera kriser med en aktiv motståndare, en antagonist som med avsikt designar hot, är en helt annan utmaning.</p>
-        <p class="about__p">Det har vi sett i cyberattacker mot samhällsviktiga funktioner, hot mot socialtjänsten och andra riktade aktioner som drabbat vårt samhälle hårt. </p>
-        <p class="about__p">Hos Krissäkra Sverige ser vi inte frågan som om en kris kommer, utan när och med vilken intensitet. Vi förstår att framgång i hantering av dessa hot om kriser kräver en förstärkt civil förmåga, där varje individ och känner till sina skyddsvärden och hur de ska skyddas. </p>
-        <p class="about__p">Vårt engagemang ligger i att skapa en sådan förmåga genom samberedskap – en gemensam beredskap som stärker individ och grupp att tillsammans förbereda sig, identifiera risker och agera koordinerat.</p>
-        <p class="about__p">Vi på Krissäkra Sverige erbjuder de verktyg och kunskaper som krävs för att navigera i och kring dessa hotbilder, och stärker därmed både individens och samhällets förmåga att stå emot och hantera kriser.</p>
-        <p class="about__p">Välj oss för en sammanhållen strategi som gör skillnad. </p>
-    </div>
-    <div class="about__section" class="target-section">
-        <img class="about__img" src="./assets/images/background/staty.jpg" width="1000" height="650" />
-    </div>
-</section>
 
-<section class="section-secondary">
+    <section id="krissakra" class="about-grid-container">
+      <div class="about__section1" class="target-section">
+        <li class="underline"><a href="#" data-i18n="mainLink1">Hem</a></li>
+        <h2 class="about__header" data-i18n="whyUs">Varför välja att Krissäkra?</h2>
+        <p class="about__p" data-i18n="whyUs1">
+          Det rådande omvärldsläget ställer nya och ökade krav på samhället.
+        </p>
+        <p class="about__p" data-i18n="whyUs2">
+          Att krissäkra din bostadsrättsförening (BRF) eller samfällighet skapar en stark och proaktiv grund för en effektiv krishantering och beredskapsplanering, vilket gör att ni tillsammans skapar förutsättningar för att möta framtiden, oavsett i vilken form den manifesterar sig. 
+        </p>
+        <p class="about__p" data-i18n="whyUs3">
+          Med rätt förberedelse och en effektiv beredskapsplanering har ni förmågan att agera om väl krisen slår till.
+        </p>
+        <p class="about__p"data-i18n="whyUs4">
+          Vi på Krissäkra Sverige erbjuder de verktyg och den kunskap som krävs för ni ska kunna navigera före och under, efter en kris, vilket stärker både individen och er som grupp.
+        </p>
+        <p class="about__p" data-i18n="whyUs5">
+        Den gemensamma beredskapen skapar en stabil grund för att skydda era gemensamma värden.
+        </p>
+         <p class="about__p" data-i18n="whyUs6">
+        Tänk efter före och välj oss för en investering som gör skillnad.
+        </p>
+      </div>
+      <div class="about__section" class="target-section">
+        <img
+          class="about__img"
+          src="./assets/images/background/staty.jpg"
+          width="1000"
+          height="650"
+        />
+      </div>
+    </section>
+
+    <section id="about" class="about-grid-container">
+      <div class="about__section1" class="target-section">
+        <h2 class="about__header" data-i18n="aboutUs">Vilka är vi?</h2>
+        <p class="about__p" data-i18n="aboutUs1">
+          Teamet på Krissäkra består av tre grundare med olika bakgrunder och
+          erfarenheter där vi kombinerat akademisk expertis med praktisk
+          erfarenhet för att skapa en stabil kunskapsbas och ett ”know how”.
+        </p>
+        <p class="about__p" data-i18n="aboutUs2">
+          På Krissäkra Sverige AB strävar vi efter att inte bara stärka
+          individuell förmåga utan också bidra till kollektiv beredskap och
+          krishanteringsförmåga.
+        </p>
+        <p class="about__p" data-i18n="aboutUs3">
+          Vårt team brinner för att stödja företag, bostadsrättsföreningar och
+          samfälligheter genom att utveckla effektiva beredskapsplaner och
+          krisledningsförmågor.
+        </p>
+        <p class="about__p" data-i18n="aboutUs4">
+          Genom vår samlade kunskap och erfarenhet skapar vi skräddarsydda lösningar som förbereder er för en tryggare och mer stabil framtid, både idag och imorgon.
+        </p>
+      </div>
+    </section>
+
+    <!-- <section class="section-secondary">
     <div>
         <img class="section-secondary__img1" src="./assets/images/small/k8-B8e8PAJ9JRM-unsplash (1).jpg"/>
         <span class="image-link-wrapper"><a href="#section1">Go to Section 1</a></span>
@@ -67,10 +131,9 @@
         <img class="section-secondary__img3" src="./assets/images/small/sergey-zolkin-_UeY8aTI6d0-unsplash.jpg"/>
         <span class="image-link-wrapper"><a href="#section3">Go to Section 2</a></span>
     </div>
-</section>
+</section> -->
 
- 
-<!-- 
+    <!-- 
 <section id="section2" class="target-section">
   <h2>Section 2</h2>
 </section>
@@ -80,7 +143,7 @@
 </section>
  -->
 
-<section id="roadmap">
+    <!-- <section id="roadmap">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -155,62 +218,118 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <a id="nav-to-top" href="#">
-        <img src="./assets/svg/icons8-top-64.png" width="50" height="50" />
+      <img src="./assets/svg/icons8-top-64.png" width="50" height="50" />
     </a>
     <section class="contact__wrapper">
-     <div class="contact-form-container">
-        <button class="close-btn"><img src="./assets/svg/close-button-svgrepo-com.svg" width="40px"/></button>
+      <div class="contact-form-container">
+        <button class="close-btn">
+          <img src="./assets/svg/close-button-svgrepo-com.svg" width="40px" />
+        </button>
         <h2 id="form-h2">Krissäkra Svergie AB</h2>
         <p>Skicka meddelande</p>
-        <form id="contactForm" action="mailto:explosivfibres@hotmail.com" method="post" enctype="text/plain"> 
+        <form
+          id="contactForm"
+          action="mailto:explosivfibres@hotmail.com"
+          method="post"
+          enctype="text/plain"
+        >
           <div class="input-group">
-            <input type="text" id="name" name="namn" required placeholder="Namn *">
+            <input
+              type="text"
+              id="name"
+              name="namn"
+              required
+              placeholder="Namn *"
+            />
           </div>
           <div class="input-group">
-            <input type="email" id="email" name="email " required placeholder="exempel@exempel.se *">
+            <input
+              type="email"
+              id="email"
+              name="email "
+              required
+              placeholder="exempel@exempel.se *"
+            />
           </div>
           <div class="input-group">
-            <input type="tel" id="phone" name="telefon " placeholder="Telefon nummer *">
+            <input
+              type="tel"
+              id="phone"
+              name="telefon "
+              placeholder="Telefon nummer *"
+            />
           </div>
           <div class="input-group">
-            <textarea id="message" name="meddelande " required placeholder="Fråga *"></textarea>
+            <textarea
+              id="message"
+              name="meddelande "
+              required
+              placeholder="Fråga *"
+            ></textarea>
           </div>
           <button type="submit" class="submit-btn">Skicka</button>
         </form>
-     </div>
+      </div>
     </section>
 
     <footer class="footer">
-        <div class="footer-content">
-            <img class="krissakra-logo" src="./assets/logo/KRIS600x150.png" alt="Krissäkra Sverige AB">
-            <div class="footer-section">
-                <h3>KONTAKT</h3>
-                <p>Intresserad av att veta mer? </p>
-                <p>För mer information om våra tjänster.<br/> Vänligen kontakta oss för att boka ett möte.</p>
-                <p>kontakt@krissakra.se</p>
-            </div>
-            <div class="footer-section">
-                <h3>OM OSS</h3>
-                <p>Medarbetare</p>
-                <p>Kontakt</p>
-                <p>Karriär</p>
-                <p>Historien om Krissäkra</p>
-                <p>Privacy Policy</p>
-            </div>
-            <div class="footer-section">
-            </div>
-            <div class="footer-section">
-                <h3>FÖLJ OSS</h3>
-                <p>Följ oss gärna i sociala medier.</p>
-                <button class="btn-logo"><img src="./assets/logo/svg/facebook-circle-svgrepo-com.svg" width="40" height="40" /></button>
-                <button class="btn-logo"><img src="./assets/logo/svg/instagram-svgrepo-com.svg" width="40" height="40" /></button>
-                <button class="btn-logo, email"><img src="./assets/logo/svg/email-envelope-letter-mail-message-svgrepo-com.svg" width="40" height="40" /></button>
-                <p class="footer-section__p">© 2024 Krissäkra Sverige AB. All rights reserved.</p>
-            </div>
+      <div class="footer-content">
+        <img
+          class="krissakra-logo"
+          src="./assets/logo/KRIS600x150.png"
+          alt="Krissäkra Sverige AB"
+        />
+        <div class="footer-section">
+          <h3>KONTAKT</h3>
+          <p>Intresserad av att veta mer?</p>
+          <p>
+            För mer information om våra tjänster.<br />
+            Vänligen kontakta oss för att boka ett möte.
+          </p>
+          <p>kontakt@krissakra.se</p>
+        </div>
+        <div class="footer-section">
+          <h3>OM OSS</h3>
+          <p>Medarbetare</p>
+          <p>Kontakt</p>
+          <p>Karriär</p>
+          <p>Historien om Krissäkra</p>
+          <p>Privacy Policy</p>
+        </div>
+        <!-- <div class="footer-section">
+            </div> -->
+        <div class="footer-section">
+          <h3>FÖLJ OSS</h3>
+          <p>Följ oss gärna i sociala medier.</p>
+          <button class="btn-logo">
+            <img
+              src="./assets/logo/svg/facebook-circle-svgrepo-com.svg"
+              width="40"
+              height="40"
+            />
+          </button>
+          <button class="btn-logo">
+            <img
+              src="./assets/logo/svg/instagram-svgrepo-com.svg"
+              width="40"
+              height="40"
+            />
+          </button>
+          <button class="btn-logo, email">
+            <img
+              src="./assets/logo/svg/email-envelope-letter-mail-message-svgrepo-com.svg"
+              width="40"
+              height="40"
+            />
+          </button>
+          <p class="footer-section__p">
+            © 2024 Krissäkra Sverige AB. All rights reserved.
+          </p>
+        </div>
       </div>
     </footer>
-</body>
+  </body>
 </html>

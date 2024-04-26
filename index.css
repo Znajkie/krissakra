@@ -76,12 +76,17 @@ button {
   opacity: 0;
   font-size: 42px;
   color: rgb(255, 255, 255);
-  text-shadow: 1px 1px 2px black;
+  text-shadow: 1px 1px 4px black;
   font-family: 'WorkSans';
 }
 
 .subtitel-text {
    margin-top: 10rem;
+}
+
+.container {
+  padding-left: 5rem;
+  padding-right: 5rem;
 }
 
 /* secondary section img links */
@@ -389,21 +394,23 @@ h1 {
   display: flex;
     flex-wrap: wrap;
   scroll-margin-top: 10px;
-  padding-top: 10rem;
+  padding-top:4rem;
   padding-left: 5rem;
   padding-right: 5rem;
-  padding-bottom: 5rem;
+  padding-bottom: 0rem;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
 }
 
 .about__section1 {
+  padding-top: 3rem;
+  padding-bottom: 2rem;
   font-size: 18px;
   margin: 0 auto;
 }
 
 .about__header {
-  padding-top: 5rem;
+  padding-top: 2rem;
   padding-bottom: 2rem;
 }
 
@@ -643,7 +650,7 @@ h3 {
 }
 
   #about {
-    padding-top: 4rem;
+    padding-top: 2rem;
   }
 }
 /******* 1250px  *******/
@@ -651,6 +658,14 @@ h3 {
   body {
       background-size: 100% 900px;
   }
+  
+  .about__section1 {
+    margin-top: -5rem;
+  }
+
+  /* .about-grid-container {
+    padding-top: 2rem;
+  } */
 
   .about-grid-container {
   flex-direction: column;
@@ -715,6 +730,10 @@ h3 {
       background-size: 100% 800px;
   }
 
+   .about__section1 {
+    margin-top: -8rem;
+  }
+
   .footer-content {
     flex-direction: column;
 }
@@ -725,6 +744,7 @@ h3 {
 
   .about-grid-container {
     flex-wrap: nowrap;
+    padding-bottom: 2rem;
   }
 
    .product__wrapper {
@@ -753,7 +773,7 @@ h3 {
   }
 
   .blank {
-  padding-top: 31rem;
+  padding-top: 28rem;
  }
 
  .krissakra-logo {
@@ -773,6 +793,10 @@ h3 {
       background-size: 180% 580px;
   }
 
+    .about-grid-container {
+    padding-bottom: 3.5rem;
+  }
+
   #about {
     padding-top: 0;
   }
@@ -781,7 +805,7 @@ h3 {
 }
 
   .blank {
-  padding-top: 20rem;
+  padding-top: 24rem;
 }
 
  .subtitel-text, .subtitel-text__bottom {
@@ -839,12 +863,14 @@ h3 {
 
 /******* 550px  *******/
 @media only screen and (max-width: 550px) {
+  
 
   .menu li a {
   font-size: 16px;
 }
 
 .about-grid-container {
+  padding-top: 0rem;
   padding-left: 2rem;
   padding-right: 2rem;
 }
