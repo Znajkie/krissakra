@@ -857,7 +857,7 @@ h3 {
     }
 
   .footer-section__p {
-  min-width: 40rem;
+  max-width: 40rem;
 }
 }
 
