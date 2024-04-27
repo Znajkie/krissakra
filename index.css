@@ -360,7 +360,7 @@ h1 {
 
 .about__header {
   padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-bottom: 1rem;
 }
 
 .about__header, .about__p {
@@ -675,7 +675,7 @@ h3 {
   }
 
    .about__section1 {
-    margin-top: -8rem;
+    margin-top: -4rem;
   }
 
   .footer-content {
@@ -746,6 +746,11 @@ h3 {
   .about__section1, .about__section {
     flex: 1;
 }
+
+  .about__section1 {
+    margin-top: -10rem;
+  }
+
 
   .blank {
   padding-top: 24rem;
