@@ -13,7 +13,7 @@ i18next.init(
           mainLink5: 'Contact',
 
           subtitleText: 'Did you know that 80% of all crises are foreseeable?',
-          subtitleText2: 'Secure your association today, for a safer tomorrow!',
+          subtitleText2: 'Secure your building today, for a safer tomorrow!',
           whyUs: 'Why Krissäkra?',
           whyUs1:
             'The current global situation has placed new and increased demands on society.',
@@ -51,7 +51,7 @@ i18next.init(
           subtitleText:
             'Visste du att 80% av alla kriser var möjliga att förutse?',
           subtitleText2:
-            'Krissäkra din förening idag, för en tryggare framtid imorgon!',
+            'Krissäkra din fastighet idag, för en tryggare framtid imorgon!',
 
           // WHY US SECTION SWE
           whyUs: 'Varför välja att Krissäkra?',
