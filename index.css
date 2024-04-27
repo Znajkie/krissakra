@@ -809,7 +809,8 @@ h3 {
 }
 
  .subtitel-text, .subtitel-text__bottom {
-    font-size: 18px;
+    font-size: 22px;
+    padding-bottom: 1rem;
  }
 
  .about__img {
