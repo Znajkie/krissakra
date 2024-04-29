@@ -343,6 +343,18 @@ h1 {
   display: flex;
     flex-wrap: wrap;
   scroll-margin-top: 10px;
+  padding-top:10rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  padding-bottom: 0rem;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.about-grid-container2 {
+  display: flex;
+    flex-wrap: wrap;
+  scroll-margin-top: 10px;
   padding-top:4rem;
   padding-left: 5rem;
   padding-right: 5rem;
@@ -350,6 +362,7 @@ h1 {
   grid-template-columns: 1fr 1fr;
   gap: 20px;
 }
+
 
 .about__section1 {
   padding-top: 3rem;
@@ -668,6 +681,13 @@ h3 {
   }
 }
 
+/******* 1430px  *******/
+@media (max-width: 1430px) {
+
+    .about-grid-container {
+    padding-top: 2rem;
+  }
+}
 /******* 1024px  *******/
 @media (max-width: 1024px) {
   body {
@@ -736,8 +756,8 @@ h3 {
       background-size: 180% 580px;
   }
 
-    .about-grid-container {
-    padding-bottom: 3.5rem;
+    .about-grid-container2 {
+    margin: 4rem;
   }
 
   #about {
