@@ -62,7 +62,7 @@ i18next.init(
           whyUs3:
             'Med rätt förberedelse och en effektiv beredskapsplanering har ni förmågan att agera om väl krisen slår till.',
           whyUs4:
-            'Vi på Krissäkra Sverige erbjuder de verktyg och den kunskap som krävs för ni ska kunna navigera före och under, efter en kris, vilket stärker både individen och er som grupp.',
+            ' Vi på Krissäkra Sverige erbjuder de verktyg och den kunskap som krävs för ni ska kunna navigera före under och efter en kris, vilket stärker både individen och er som grupp.',
           whyUs5:
             'Den gemensamma beredskapen skapar en stabil grund för att skydda era gemensamma värden.',
           whyUs6:
