@@ -16,7 +16,7 @@
   align-items: center;
 }
 .contact-form-container {
-  font-family: 'Gotham_book';
+  /* font-family: 'Gotham_book'; */
   position: relative;
   display: flex;
   flex-direction: column;

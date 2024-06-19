@@ -51,7 +51,8 @@ body {
   overflow-y: auto;
   height: 100%;
   background-color: rgb(255, 255, 255);
-  font-family: 'Gotham_book';
+    /**!!!!!!!!!!!!!!!!!!!!!!!!!!!! ÄNDRAD */
+  font-family: 'M'; 
   scroll-behavior: smooth;
 }
 
@@ -209,7 +210,8 @@ element.style {
 }
 
 .menu li a {
-  font-family: 'Gotham_book';
+    /**!!!!!!!!!!!!!!!!!!!!!!!!!!!! ÄNDRAD */
+  font-family: 'M'; 
 }
 
 .menu-button-container {
@@ -402,7 +404,8 @@ element.style {
   margin: 0 auto;
   padding-top: 4rem;
   padding: 1rem;
-  font-family: 'Gotham_book';
+  /**!!!!!!!!!!!!!!!!!!!!!!!!!!!! ÄNDRAD */
+  font-family: 'M'; 
   font-size: 20px;
 }
 
