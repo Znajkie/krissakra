@@ -17,7 +17,7 @@ i18next.init(
           titleText: 'Did you know that 80% of all crises are foreseeable?',
           titleText2: 'Secure your building today, for a safer tomorrow!',
           //* Booking button
-          bookingBtn: 'Contact us!',
+          bookingBtn: 'Book now!',
           //* Why us
           whyUs: 'Why Krissäkra?',
           whyUs1:
