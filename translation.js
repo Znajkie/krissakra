@@ -27,10 +27,8 @@ i18next.init(
           whyUs3:
             'We realized that a new concept was needed to clarify our vision, Collective Preparedness.',
           whyUs4:
-            'Krissäkra Sverige AB, offer the tools and knowledge required to prepare you to safely navigate before, during, and after a crisis.',
-          whyUs5:
             'Strengthening both the individual and your group while safeguarding your shared values.',
-          whyUs6: 'Think ahead and choose us for an investment in your future!',
+          whyUs5: 'Think ahead and choose us for an investment in your future!',
           //* About us
           aboutUs: 'Who are we at Krissäkra?',
           aboutUs1:
@@ -85,10 +83,8 @@ i18next.init(
           whyUs3:
             'Vi insåg att det behövdes ett nytt begrepp för att tydliggöra vår vision, Samberedskap.',
           whyUs4:
-            ' Vi på Krissäkra Sverige erbjuder de verktyg och den kunskap som krävs för ni ska kunna navigera före under och efter en kris, vilket stärker både individen och er som grupp.',
-          whyUs5:
             'Den gemensamma beredskapen skapar en stabil grund för att skydda era gemensamma värden.',
-          whyUs6:
+          whyUs5:
             'Tänk efter före och välj oss för en investering som gör skillnad.',
           //* Om oss
           aboutUs: 'Vilka är vi på Krissäkra?',
