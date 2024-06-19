@@ -1,24 +1,35 @@
 @font-face {
-  font-family: 'PlayfairDisplay';
-  src: url(./assets/fonts/Playfair_Display/PlayfairDisplay-Italic-VariableFont_wght.ttf);
-}
-@font-face {
-  font-family: 'Genos';
-  src: url(./assets/fonts/Genos/Genos-VariableFont_wght.ttf);
-}
-@font-face {
-  font-family: 'A';
-  src: url(./assets/fonts/Tektur/Tektur-VariableFont_wdth\wght.ttf);
+  font-family: 'M';
+  src: url(./assets/fonts/DmSans/DMSans-VariableFont_wght.ttf);
 }
 
 @font-face {
-  font-family: 'WorkSans';
-  src: url(./assets/fonts/Work_Sans/WorkSans-VariableFont_wght.ttf);
+  font-family: 'DM';
+  src: url(./assets/fonts/DmSans/DMSans-Italic-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: 'Gotham_bold';
+  src: url(./assets/fonts/gotham/Gotham-Bold.otf);
+}
+
+@font-face {
+  font-family: 'Gotham_book';
+  src: url(./assets/fonts/gotham/GothamBook.ttf);
+}
+
+@font-face {
+  font-family: 'Gotham_light';
+  src: url(./assets/fonts/gotham/Gotham-Light.otf);
 }
 
 @keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .fade-in {
@@ -33,20 +44,67 @@
   }
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  overflow-y: auto;
+  height: 100%;
+  background-color: rgb(255, 255, 255);
+  font-family: 'Gotham_book';
+  scroll-behavior: smooth;
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  min-height: 800px;
+  color: #fff;
+  z-index: 0;
+}
+
+.video-box {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.video-background {
+  position: absolute;
+  min-width: 200%;
+  min-height: 200%;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.7);
+}
+
+h2,
+h3 {
+  font-size: 26px;
+  text-align: center;
+}
+
+p {
+  font-size: 18px;
+}
+
 ul {
   list-style-type: none;
 }
 
 a {
-  font-family: 'WorkSans';
+  font-family: 'M';
   font-weight: 700;
-  font-size: 1.2rem;
   text-decoration: none;
-  color: #000000a6
+  color: #000000a6;
 }
 
-a:hover {
-  color: #020202
+a:hover,
+#languageBtn:hover {
+  color: #020202;
 }
 
 button {
@@ -61,123 +119,67 @@ button {
   right: 5%;
 }
 
+.bookingBtn-container {
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+#bookingBtn {
+  display: inline-block;
+  padding: 0.7em 1.7em;
+  margin: 0 0.3em 0.3em 0;
+  border-radius: 0.2em;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #ff3333;
+  box-shadow: inset 0 -0.6em 1em -0.35em rgba(0, 0, 0, 0.17),
+    inset 0 0.6em 2em -0.3em rgba(255, 255, 255, 0.15),
+    inset 0 0 0em 0.05em rgba(255, 255, 255, 0.12);
+  text-align: center;
+  position: relative;
+  width: 12rem;
+  height: 3.5rem;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#bookingBtn:hover {
+  background-color: #ff0000;
+  border-color: #ff1616;
+}
+
 #languageBtn {
-  font-weight: 700;
   display: flex;
-  font-size: 1.2rem;
-  color: rgb(39, 39, 39);
-  border-radius: 1rem;
   height: 2rem;
-  font-family: 'WorkSans';
 }
 
-.subtitel-text, .subtitel-text__bottom {
+/* header */
+.title-text,
+.title-text__bottom {
   opacity: 0;
-  font-size: 42px;
+  font-size: 28px;
   color: rgb(255, 255, 255);
-  text-shadow: 1px 1px 4px black;
-  font-family: 'WorkSans';
+  text-shadow: -2px -2px 2px rgba(222, 222, 222, 0.2),
+    /* Top-left */ 2px -2px 2px rgba(0, 0, 0, 0.2),
+    /* Top-right */ -2px 2px 2px rgba(0, 0, 0, 0.2),
+    /* Bottom-left */ 2px 2px 2px rgba(0, 0, 0, 0.2); /* Bottom-right */
+  font-family: 'Gotham_bold';
+  text-transform: uppercase;
+  animation: fadeIn 5s ease forwards;
 }
 
-.subtitel-text {
-   margin-top: 10rem;
+.title-text {
+  margin-top: 10rem;
 }
 
 .container {
   padding-left: 5rem;
   padding-right: 5rem;
 }
-
-/* secondary section img links */
-.blank {
-  padding-top: 38rem;
-}
-
-.section-secondary {
-  display: flex;
-  flex-grow: 1;
-  scroll-snap-align: start;
-  margin-top: 1rem;
-  height: 20rem;
-  width: 100%;
-}
-
-.section-secondary > div {
-  position: relative;
-  flex: 1;
-  overflow: hidden;
-}
-
-.section-secondary img {
-  width: 100%;
-  height: 400px;
-  object-fit: cover;
-}
-
-.image-link-wrapper {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  color: rgb(106, 202, 98);
-}
-
-.section-secondary .image-link-wrapper::before,
-.section-secondary .image-link-wrapper::after {
-  display: block;
-  opacity: 0;
-  transition: opacity 0.5s ease;
-  pointer-events: none;
-}
-
-/** Hover styles for the .image-link-wrapper */
-.section-secondary .image-link-wrapper:hover::before,
-.section-secondary .image-link-wrapper:hover::after {
-  opacity: 1;
-}
-
-/* Target the first .image-link-wrapper */
-.section-secondary > div:nth-child(1) .image-link-wrapper::before {
-  content: 'First Before ';
-}
-.section-secondary > div:nth-child(1) .image-link-wrapper::after {
-  content: ' First After';
-}
-
-/* Target the second .image-link-wrapper */
-.section-secondary > div:nth-child(2) .image-link-wrapper::before {
-  content: 'Second Before ';
-}
-.section-secondary > div:nth-child(2) .image-link-wrapper::after {
-  content: ' Second After';
-}
-
-/* Target the third .image-link-wrapper */
-.section-secondary > div:nth-child(3) .image-link-wrapper::before {
-  content: 'Third Before ';
-}
-.section-secondary > div:nth-child(3) .image-link-wrapper::after {
-  content: ' Third After';
-}
-
-.image-link-wrapper a {
-  color: #fff;
-  text-decoration: none;
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 5px 10px;
-  border-radius: 5px;
-}
-
-.target-section {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 1px solid #000;
-}
-
-/* ny */
 
 element.style {
   height: 100%;
@@ -186,24 +188,10 @@ element.style {
 
 *,
 *:before,
-*:after{
+*:after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-body {
-  display: flex;
-  flex-direction: column;
-  overflow-x: hidden;
-  overflow-y: auto;
-  height: 100%;
-  background-image: url('./assets/images/background/jon-flobrant.jpg');
-  background-size: contain;
-  background-position: top;
-  background-size: 100% 1000px;
-  background-repeat: no-repeat;
-  font-family: 'WorkSans';
-  scroll-behavior: smooth;
 }
 
 /** Dropdown menu*/
@@ -216,12 +204,12 @@ body {
 }
 
 .menu > li {
-  margin: 0 1rem;
+  margin: 0 0.6rem;
   overflow: hidden;
 }
 
 .menu li a {
-  font-family: 'WorkSans';
+  font-family: 'Gotham_book';
 }
 
 .menu-button-container {
@@ -244,7 +232,7 @@ body {
   /* Nav symbol color */
   background-color: #000000;
   position: absolute;
-  height: 4px;
+  height: 5px;
   width: 30px;
   transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
   border-radius: 2px;
@@ -280,6 +268,7 @@ body {
   position: fixed;
   display: flex;
   width: 100%;
+  height: 4.4rem;
   background: linear-gradient(to left, #918e8e52, #fafafa);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
@@ -287,23 +276,18 @@ body {
   z-index: 100;
 }
 
+/* KRISSÄKRA LOGO HEADER */
 .hero {
   position: absolute;
-  height: 25rem;
-  top: 10%;
-  left: 5%;
-}
-
-h1 {
-  padding-left: 3rem;
-  font-weight: 900;
-  font-size: 5rem;
+  height: 5rem;
+  top: -7%;
+  left: 3%;
 }
 
 .site-nav {
   justify-content: space-between;
   width: 100%;
-  height: 6rem;
+  height: 5rem;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -314,7 +298,6 @@ h1 {
 .main-menu {
   display: flex;
   justify-content: space-between;
-  width: 50rem;
 }
 
 /*! Menu Line */
@@ -330,7 +313,7 @@ h1 {
   right: 0;
   width: 0;
   height: 2px;
-  background-color: #f1f1f1;
+  background-color: #fb0000;
   transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
 }
 
@@ -341,45 +324,129 @@ h1 {
 /*! end of Menu line */
 .about-grid-container {
   display: flex;
-    flex-wrap: wrap;
-  scroll-margin-top: 10px;
-  padding-top:10rem;
-  padding-left: 5rem;
-  padding-right: 5rem;
-  padding-bottom: 0rem;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
-}
-
-.about-grid-container2 {
-  display: flex;
-    flex-wrap: wrap;
-  scroll-margin-top: 10px;
-  padding-top:4rem;
-  padding-left: 5rem;
-  padding-right: 5rem;
-  padding-bottom: 0rem;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
-}
-
-
-.about__section1 {
+  flex-wrap: wrap;
+  scroll-margin-top: 132px;
   padding-top: 3rem;
   padding-bottom: 2rem;
-  font-size: 18px;
+  gap: 20px;
+}
+
+.about__section1 {
+  padding: 1rem;
+  /* font-size: 16px; */
   margin: 0 auto;
 }
 
-.about__header {
-  padding-top: 2rem;
-  padding-bottom: 1rem;
+.about__header,
+.about__header2 {
+  padding-bottom: 0.5rem;
+  color: rgb(4, 4, 4);
+  border-bottom: 2px solid #ff0000;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
 }
 
-.about__header, .about__p {
-  max-width: 40rem;
+.about__header,
+.about__p {
+  max-width: 60rem;
 }
 
+#krissakra {
+  scroll-margin-top: 114px;
+}
+
+.krissakra-logo {
+  position: absolute;
+  bottom: -15%;
+  left: 0;
+  width: 180px;
+}
+
+.about__section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('./assets/images/background/img-heDlY4xFNjH9bUIAjF8cD.jpeg');
+  height: 700px;
+  color: rgb(0, 0, 0);
+  /* the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: 50% 30%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* !CHECKMARK! */
+
+.checkmark {
+  color: rgb(0, 163, 68);
+
+  text-shadow: 1px 1px 2px black;
+  margin-right: 10px;
+}
+
+.product_list {
+  border-bottom: 2px solid #ff505027;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.product_list-item {
+  font-weight: 900;
+  font-size: 20px;
+}
+
+/* Vad innebär krissäkra text */
+.about {
+  display: flex;
+  margin: 0 auto;
+  padding-top: 4rem;
+  padding: 1rem;
+  font-family: 'Gotham_book';
+  font-size: 20px;
+}
+
+.about-content {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+}
+
+/* Vad innebär krissäkra BILD*/
+.about-image {
+  margin-left: 8rem;
+  position: relative;
+  display: inline-block;
+  background-image: url('./assets/logo/certifiering.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 100%;
+  filter: drop-shadow(5px 5px 5px 5px rgb(2, 2, 2));
+  width: 35rem;
+}
+
+.product_listh3 {
+  color: rgb(4, 4, 4);
+  border-bottom: 2px solid #ff0000;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+#about {
+  display: flex;
+  margin: 0 auto;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.722);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border: 1px solid rgba(79, 75, 75, 0.1);
+}
+
+#about p {
+  color: black;
+  font-weight: 400;
+}
 
 #nav-to-top {
   position: fixed;
@@ -391,254 +458,89 @@ h1 {
   filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.4));
 }
 
-/* Below mainsite */
-#roadmap {
-  min-height: 1000px;
-  max-width: 1100px;
-  margin: 0 auto;
-  margin-top: 15rem;
-  margin-bottom: 10rem;
-  padding: 2rem;
-  background: rgba(175, 175, 175, 0.692);
-  border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(4.1px);
-  -webkit-backdrop-filter: blur(4.1px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
-
-}
-
-#roadmap h2 {
-  padding-bottom: 10px;
-  margin-bottom: 20px;
-}
-
-#roadmap-content {
-  display: flex;
-  justify-content: space-between;
-}
-
-#roadmap-list {
-  width: 70%;
-}
-
-#roadmap-item {
-  margin-bottom: 20px;
-}
-
-.checkmark {
-  margin-right: 10px;
-}
-
-
-
-/** Product */
-
-.product__container {
-    color: rgb(0, 0, 0);
-    background: rgb(170, 184, 194);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(5px);
-}
-
-#product__h1 {
-  scroll-margin-top: 95px;
-  padding-top: 3rem;
-  font-size: 48px;
-  text-align: center;
-  font-weight: 500;
-}
-
-.product__wrapper {
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-    padding: 5rem;
-}
-
-.product__title {
-  position: relative;
-  padding-bottom: 2rem;
-}
-
-.product__title::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 15px;
-  height: 2px;
-  background-color: #0000002a;
-}
-
-.product__details {
-  display: flex;
-  width: 40rem;
-  padding: 2rem;
-  border-radius: 1rem;
-  background-color: rgba(36, 56, 63, 0.062);
-  flex-direction: column;
-  border-style: none;
-  
-}
-
-.product__title, .product__description, .product__list-item {
-    font-family: 'WorkSans';
-}
-
-.product__description, .product__list-item {
-  font-size: 18px;
-  letter-spacing: 1px;
-}
-
-.product__list-item {
-  padding: 1rem;
-  list-style-type: disc;
-}
-
-h2,
-h3 {
-  text-align: center;
-}
-
-.hover {
-  text-shadow: 1px 1px 2px black;
-  color: white;
-  font-family: sans-serif;
-  font-size: 18px;
-  margin-bottom: 15px;
-  padding-left: 1.5em;
-  text-indent: -1.5em;
-}
-
-.offer {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  color: black;
-  height: 13rem;
-}
-
-.offer__content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  flex-basis: calc(33.333% - 20px);
-  max-width: calc(33.333% - 20px);
-}
-
-.offer h3 {
-  color: black;
-  font-size: 20px;
-  font-weight: 900;
-}
-
-.offer__svg {
-  width: 80px;
-  height: 80px;
-  background-image: url('./assets/svg/team-svgrepo-com.svg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  margin-bottom: 1rem;
-}
-
-.offer__text {
-  font-family: sans-serif;
+.footer {
   display: flex;
   justify-content: center;
-  width: 20rem;
-}
-
-.history {
-  font-family: sans-serif;
-  padding: 10rem;
-  height: 12rem;
-}
-
-.history__header {
-  padding: 1rem;
-}
-
-.footer {
-   
-    display: flex;
-    justify-content: center;
-    background: #bbb8b8;
-    /** byt */
-    color: #1d1d1d;
-    font-size: 16px;
+  background: #dbdbdb;
+  color: #1d1d1d;
+  font-size: 12px;
 }
 
 .footer-content {
+  display: flex;
   position: relative;
-    margin-top: 2rem;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    max-width: 2000px;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .footer-section {
-    min-width: 20rem;
-    margin: 20px;
+  margin: 20px;
 }
 
 .footer-section h3 {
-    text-align: start;
-    margin-bottom: 20px;
+  text-align: start;
+  margin-bottom: 8px;
+  font-size: 14px;
+  font-weight: bold;
 }
 
 .footer-section button {
-  padding-top: 1rem;
+  padding-top: 0.2rem;
 }
 
 .footer-section__p {
-  padding-top: 5rem;
+  font-size: 12px;
+  text-align: center;
+  background: #dbdbdb;
+  padding-top: 2rem;
 }
 
-.krissakra-logo {
-  position: absolute;
-  bottom: 10%;
-  left: 0;
-  width: 180px;
+.footer-section p {
+  font-size: 12px;
 }
 
-@media (max-width: 1838px) {
-.about-grid-container {
-  justify-content: center;
-}
-
-  #about {
-    padding-top: 2rem;
-  }
-}
-
-/******* 1250px  *******/
+/******* 1250px  ******************************************************************************/
 @media (max-width: 1250px) {
-  body {
-      background-size: 100% 900px;
+  .title-text,
+  .title-text__bottom {
+    font-size: 26px;
   }
-  
-  .about__section1 {
-    margin-top: -5rem;
+
+  .title-text {
+    margin-top: 7rem;
+  }
+
+  .title-text:hover,
+  .title-text__bottom:hover {
+    color: red;
+  }
+
+  .about-image {
+    margin-left: 2rem;
+  }
+
+  .about-list {
+    width: 100%;
+  }
+
+  .about-content {
+    justify-content: center;
   }
 
   .about-grid-container {
-  flex-direction: column;
+    flex-direction: column;
   }
 
-  .blank {
-  padding-top: 37rem;
-}
   .menu-button-container {
     display: flex;
   }
 
   .menu {
     position: absolute;
-    top: 50%;
+    top: 28%;
     margin-top: 50px;
+    width: 100%;
     right: 0;
     flex-direction: column;
     justify-content: center;
@@ -652,6 +554,7 @@ h3 {
     border: 0;
     transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
   }
+
   #menu-toggle:checked ~ .menu li {
     border: 1px solid #cfc6c68a;
     height: 2.5em;
@@ -667,8 +570,8 @@ h3 {
     padding: 0.5em 0;
     width: 100%;
     color: rgb(255, 255, 255);
-    background: linear-gradient(to left, #96b4c5de, #c5c5c5f5);
-    backdrop-filter: blur(10px);
+    background: linear-gradient(to left, #918e8ec5, #fafafa);
+    backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(5px);
     border: 1px solid rgba(79, 75, 75, 0.3);
   }
@@ -681,189 +584,222 @@ h3 {
   }
 }
 
-/******* 1430px  *******/
-@media (max-width: 1430px) {
-
-    .about-grid-container {
-    padding-top: 2rem;
-  }
-}
-/******* 1024px  *******/
-@media (max-width: 1024px) {
-  body {
-      background-size: 100% 800px;
-  }
-
-   .about__section1 {
-    margin-top: -4rem;
-  }
-
-  .footer-content {
+/******* 768px  ******************************************************************************/
+@media (max-width: 768px) {
+  .about-content {
     flex-direction: column;
-}
+  }
 
-  .about__img {
-  width: 100%;
+  .about-image {
+    margin-left: 0rem;
+    height: 35rem;
+  }
+
+  .product_list-item {
+    font-size: 16px;
+  }
+
+  .about {
+    font-size: 16px;
+  }
+
+  #about p {
+    font-size: 16px;
+  }
+
+  #krissakra {
+    padding-top: 0;
   }
 
   .about-grid-container {
-    flex-wrap: nowrap;
-    padding-bottom: 2rem;
+    margin-top: 2rem;
   }
 
-   .product__wrapper {
-    flex-direction: column;
+  .container {
     padding: 2rem;
-    gap: 20px;
-  }
-
-  .product__title::after {
-    padding-bottom: 0.3rem;
-    margin-top: 0.2rem;
-  }
-
-  .product__details {
-    width: auto;
-  }
-
-  .product__h1 {
-    font-size: 36px;
-    padding-top: 2rem;
-  }
-
-  .product__description, .product__list-item {
-    font-size: 18px;
-  }
-
-  .blank {
-  padding-top: 28rem;
- }
-
- .krissakra-logo {
-  position: absolute;
-  bottom: 5%;
-}
-
-  .footer-section__p {
-  padding-top: 2rem;
-}
-}
-
-/******* 768px  *******/
-@media (max-width: 768px) {
-
-    body {
-      background-size: 180% 580px;
-  }
-
-    .about-grid-container2 {
-    margin: 4rem;
   }
 
   #about {
     padding-top: 0;
   }
-  .about__section1, .about__section {
-    flex: 1;
-}
 
-  .about__section1 {
-    margin-top: -10rem;
+  .footer-section__p {
+    padding-top: 2rem;
   }
-
-
-  .blank {
-  padding-top: 24rem;
-}
-
- .subtitel-text, .subtitel-text__bottom {
-    font-size: 22px;
-    padding-bottom: 1rem;
- }
-
- .about__img {
-  height: 80%;
-}
-
-.footer-section__p {
-  padding-top: 2rem;
-}
 }
 
 /******* 650px  *******/
 @media (max-width: 650px) {
+  .about-image {
+    height: 18rem;
+    width: 30rem;
+  }
+
+  .video-background {
+    top: 70%;
+    left: 20%;
+  }
+
+  .title-text {
+    margin-top: 4rem;
+  }
+
+  .video-container {
+    min-height: 620px;
+  }
+  /**adda * */
 
   .krissakra-logo {
-  position: absolute;
-  width: 180px; /* Logo size */
-}
+    bottom: -7%;
+    left: -32%;
+  }
 
   .menu-button-container {
     display: flex;
   }
 
-    .footer-content {
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .footer-section {
-        margin: 10px;
-        max-width: 100px;
-    }
+  .title-text,
+  .title-text__bottom {
+    font-size: 20px;
+  }
 
-    .footer-section button {
-      padding-bottom: 1rem;
-      padding-top: 1rem;
-    }
+  .footer {
+    font-size: 16px;
+  }
 
-    .footer-bottom {
-        flex-direction: column;
-        align-items: center;
-    }
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-section {
+    margin: 10px;
+    max-width: 100px;
+  }
+
+  .footer-section button {
+    padding-bottom: 0.5rem;
+    padding-top: 1rem;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: center;
+  }
 
   .footer-section__p {
-  max-width: 40rem;
-}
+    max-width: 40rem;
+  }
 }
 
-/******* 550px  *******/
+/******* 550px  ******************************************************************************/
 @media only screen and (max-width: 550px) {
-  
-  .menu li a {
-  font-size: 16px;
-}
-
-.about-grid-container {
-  padding-top: 0rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
-}
-
-.section-secondary {
-  flex-direction: column;
-  height: 40rem;
-}
-  .hero {
-    padding-top: 0.5rem;
-    width: 80%;
-    height: 20rem;
+  .about {
+    display: flex;
   }
 
-    .menu-button-container {
+  .about-image {
+    margin: 0 auto;
+  }
+
+  .about-image {
+    height: 18rem;
+    width: 25rem;
+  }
+
+  .overlayImg {
+    display: none;
+  }
+  .title-text,
+  .title-text__bottom {
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    text-shadow: -2px -2px 4px rgba(0, 0, 0, 0.4),
+      /* Top-left */ 2px -2px 4px rgba(0, 0, 0, 0.4),
+      /* Top-right */ -2px 2px 4px rgba(0, 0, 0, 0.4),
+      /* Bottom-left */ 2px 2px 4px rgba(0, 0, 0, 0.4); /* Bottom-right */
+  }
+  .video-container {
+    position: relative;
+    width: 100%;
+    min-height: 400px;
+    color: #fff;
+    z-index: 0;
+  }
+
+  .video-box {
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  .video-background {
+    min-width: 100%;
+    min-height: 100%;
+    top: 110%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1.2);
+  }
+
+  #bookingBtn {
+    margin-top: 10rem;
+    width: 10rem;
+    height: 3.5rem;
+    font-size: 20px;
+  }
+
+  .section-secondary {
+    flex-direction: column;
+    height: 40rem;
+  }
+  .hero {
+    width: 70%;
+  }
+
+  .menu-button-container {
     padding-left: 1rem;
   }
-  h1 {
-    font-size: 1.8rem;
+
+  .footer-section button {
+    margin-bottom: 0.6rem;
   }
 
-  .container p {
-    font-size: 1.2rem;
+  .footer {
+    display: flex;
+    justify-content: center;
+    background: #dbdbdb;
+    color: #1d1d1d;
+    font-size: 12px;
   }
-  
-.krissakra-logo {
-  position: absolute;
-  bottom: 5%;
-  left:16%;
+
+  .footer-content {
+    position: relative;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: flex-start; /* Align content at the start (left) */
+    max-width: 100%;
+  }
+
+  .footer-section {
+    justify-content: center;
+  }
+
+  .footer-section__p {
+    padding-top: 2rem;
+  }
+}
+
+@media only screen and (max-width: 440px) {
+  .about-image {
+    display: fill;
+  }
+}
+
+
+@media only screen and (max-width: 550px) {
+.about-image {
+  max-width: 15rem;
 }
 }
