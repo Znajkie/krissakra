@@ -325,6 +325,7 @@ element.style {
 
 /*! end of Menu line */
 .about-grid-container {
+  background-color: #efefef;
   display: flex;
   flex-wrap: wrap;
   scroll-margin-top: 132px;
@@ -334,6 +335,7 @@ element.style {
 }
 
 .about__section1 {
+  width: 100%;
   padding: 1rem;
   margin: 0 auto;
 }
@@ -347,9 +349,9 @@ element.style {
   margin-bottom: 20px;
 }
 
-.about__header,
 .about__p {
-  max-width: 60rem;
+  margin: 0 auto;
+  max-width: 74rem;
 }
 
 #krissakra {
@@ -397,13 +399,12 @@ element.style {
   font-size: 20px;
 }
 
-/* Vad innebär krissäkra text */
+/* Vilka steg tar text */
 .about {
   display: flex;
   margin: 0 auto;
   padding-top: 4rem;
   padding: 1rem;
-  /**!!!!!!!!!!!!!!!!!!!!!!!!!!!! ÄNDRAD */
   font-family: 'M'; 
   font-size: 20px;
 }

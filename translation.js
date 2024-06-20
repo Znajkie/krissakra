@@ -21,7 +21,7 @@ i18next.init(
           //* Why us
           whyUs: 'Why Krissäkra?',
           whyUs1:
-            'At Krissäkra Sverige AB, we offer the tools and knowledge needed for housing cooperatives and communities to navigate before, during, and after a crisis.',
+            'At Krissäkra Sverige, we offer the tools and knowledge needed for housing cooperatives and communities to navigate before, during, and after a crisis.',
           whyUs2:
             'The common framework and individually tailored action plan form a foundation and insurance that protects your collective and individual values.',
           whyUs3:
@@ -36,7 +36,7 @@ i18next.init(
           aboutUs2:
             'We have successfully combined academic knowledge with practical experience to create a broad knowledge base and depth in our "know-how".',
           aboutUs3:
-            'At Krissäkra Sverige AB, we strive not only to strengthen individual capability but also to promote collective preparedness and crisis management capability.',
+            'At Krissäkra Sverige, we strive not only to strengthen individual capability but also to promote collective preparedness and crisis management capability.',
           aboutUs4:
             'Our passion and driving force is to support society by helping companies, housing cooperatives, and communities develop effective contingency plans and crisis management strategies.',
           aboutUs5:
@@ -81,7 +81,7 @@ i18next.init(
           //* Varför oss
           whyUs: 'Varför välja att Krissäkra?',
           whyUs1:
-            'Vi på Krissäkra Sverige AB erbjuder de verktyg och den kunskap som krävs för att bostadsrättsföreningar och samfälligheter ska kunna navigera före, under och efter en kris.',
+            'Vi på Krissäkra Sverige erbjuder de verktyg och den kunskap som krävs för att bostadsrättsföreningar och samfälligheter ska kunna navigera före, under och efter en kris.',
           whyUs2:
             'Det gemensamma ramverket och den individuellt framtagna handlingsplanen utgör en grund och försäkring som skyddar era gemensamma och individuella värden.',
           whyUs3:
@@ -97,7 +97,7 @@ i18next.init(
           aboutUs2:
             'Vi har framgångsrikt kombinerat akademisk kunskap med praktisk erfarenhet för att skapa en bred kunskapsbas och ett djup i vårt "know-how".',
           aboutUs3:
-            'På Krissäkra Sverige AB strävar vi inte bara efter att stärka individuell förmåga utan även att främja kollektiv beredskap och krishanteringsförmåga.',
+            'På Krissäkra Sverige strävar vi inte bara efter att stärka individuell förmåga utan även att främja kollektiv beredskap och krishanteringsförmåga.',
           aboutUs4:
             'Vår passion och drivkraft är att stötta samhället genom att hjälpa företag, bostadsrättsföreningar och samfälligheter att utveckla effektiva beredskapsplaner och krisledningsstrategier.',
           aboutUs5:
