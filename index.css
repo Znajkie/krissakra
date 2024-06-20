@@ -695,7 +695,7 @@ button {
 
   .krissakra-logo {
     bottom: -7%;
-    left: -32%;
+    left: 0%;
   }
 
   .menu-button-container {
@@ -718,7 +718,7 @@ button {
 
   .footer-section {
     margin: 10px;
-    max-width: 100px;
+    max-width: 200px;
   }
 
   .footer-section button {
@@ -822,9 +822,9 @@ button {
     max-width: 100%;
   }
 
-  .footer-section {
+  /* .footer-section {
     justify-content: center;
-  }
+  } */
 
   .footer-section__p {
     padding-top: 2rem;
@@ -845,7 +845,6 @@ button {
   opacity: 0;
   font-size: 20px;
 }
-
 }
 
 
