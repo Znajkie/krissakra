@@ -75,6 +75,19 @@ body {
   scroll-behavior: smooth;
 }
 
+element.style {
+  height: 100%;
+  width: 100%;
+}
+
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .video-container {
   position: relative;
   width: 100%;
@@ -146,6 +159,7 @@ button {
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 1;
+  padding-top: 1rem;
 }
 #bookingBtn {
   font-family: 'M';
@@ -182,13 +196,20 @@ button {
 .title-text,
 .title-text__bottom {
   opacity: 0;
-  font-size: 28px;
-  color: rgb(255, 255, 255);
-  text-shadow: -2px -2px 2px rgba(222, 222, 222, 0.3),
-    /* Top-left */ 2px -2px 2px rgba(0, 0, 0, 0.3),
-    /* Top-right */ -2px 2px 2px rgba(0, 0, 0, 0.3),
-    /* Bottom-left */ 2px 2px 2px rgba(0, 0, 0, 0.3); /* Bottom-right */
-  font-family: 'Gotham_bold';
+  font-size: 42px;
+  color: white;
+  text-shadow: 0 1px 0 #c1c1c1,
+               0 2px 0 #8e8e8e,
+               0 3px 0 #8a8a8a,
+               0 4px 0 #6d6d6d,
+               0 5px 0 #5f5f5f,
+               0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15);
   text-transform: uppercase;
   animation: fadeIn 5s ease forwards;
 }
@@ -202,18 +223,7 @@ button {
   padding-right: 5rem;
 }
 
-element.style {
-  height: 100%;
-  width: 100%;
-}
 
-*,
-*:before,
-*:after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
 /** Dropdown menu*/
 .menu {
@@ -253,7 +263,7 @@ element.style {
   /* Nav symbol color */
   background-color: #000000;
   position: absolute;
-  height: 5px;
+  height: 4px;
   width: 30px;
   transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
   border-radius: 2px;
@@ -308,7 +318,7 @@ element.style {
 .site-nav {
   justify-content: space-between;
   width: 100%;
-  height: 5rem;
+  /* height: 5rem; */
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -347,7 +357,7 @@ element.style {
   background-color: #ffffff;
   display: flex;
   flex-wrap: wrap;
-  scroll-margin-top: 132px;
+  scroll-margin-top: 110px;
   padding-bottom: 3rem;
   gap: 20px;
 }
@@ -376,7 +386,7 @@ element.style {
 }
 
 #krissakra {
-  scroll-margin-top: 114px;
+  scroll-margin-top: 230px;
 }
 
 .krissakra-logo {
@@ -403,8 +413,7 @@ element.style {
 /* !CHECKMARK! */
 
 .checkmark {
-  color: rgb(0, 163, 68);
-
+  color: rgb(42, 255, 131);
   text-shadow: 1px 1px 2px black;
   margin-right: 10px;
 }
@@ -470,6 +479,7 @@ element.style {
 }
 
 #about {
+  scroll-margin-top: 258px;
   display: flex;
   margin: 0 auto;
   padding: 1rem;
@@ -544,13 +554,14 @@ element.style {
     font-size: 26px;
   }
 
+  .about-grid-container {
+  scroll-margin-top: -500px;
+
+
+}
+
   .title-text {
     margin-top: 7rem;
-  }
-
-  .title-text:hover,
-  .title-text__bottom:hover {
-    color: red;
   }
 
   .about-image {
@@ -664,7 +675,8 @@ element.style {
 /******* 650px  *******/
 @media (max-width: 650px) {
   .about-image {
-    height: 18rem;
+    /* height: 18rem; */
+    overflow: hidden;
     width: 30rem;
   }
 
@@ -680,7 +692,6 @@ element.style {
   .video-container {
     min-height: 620px;
   }
-  /**adda * */
 
   .krissakra-logo {
     bottom: -7%;
@@ -700,10 +711,10 @@ element.style {
     font-size: 16px;
   }
 
-  .footer-content {
+  /* .footer-content {
     flex-direction: column;
     align-items: center;
-  }
+  } */
 
   .footer-section {
     margin: 10px;
@@ -729,6 +740,12 @@ element.style {
 @media only screen and (max-width: 550px) {
   .about {
     display: flex;
+  }
+
+    .footer-content {
+    flex-direction: column;
+    align-items: center;
+    width: 100;
   }
 
   .about-image {
@@ -776,7 +793,9 @@ element.style {
     height: 40rem;
   }
   .hero {
-    width: 70%;
+    width: 12rem;
+    height: 3.2rem;
+    top: 10%
   }
 
   .menu-button-container {
@@ -814,9 +833,19 @@ element.style {
 
 @media only screen and (max-width: 450px) {
   .about-image {
-    display: fill;
-    width: 20rem;
+    width: 22rem;
   }
+
+  .bookingBtn-container {
+    padding-top: 1rem;
+}
+
+  .title-text,
+.title-text__bottom {
+  opacity: 0;
+  font-size: 20px;
+}
+
 }
 
 
@@ -825,6 +854,10 @@ element.style {
   max-width: 18rem;
   padding: 0;
   margin: 0;
+}
+
+  .bookingBtn-container {
+    padding-top: 2rem;
 }
 
 

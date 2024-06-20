@@ -116,9 +116,9 @@ i18next.init(
           product_list7_header: 'Trygghet och förmåga',
           about__p_header: 'Krissäkra certification?',
           about__p1:
-            'Our certification is a mark of quality that demonstrates your fundamental ability to protect both tangible and intangible assets.',
+            'Vår certifiering är en kvalitetsstämpel som visar att ni har den grundläggande förmågan att skydda både materiella och immateriella värden.',
           about__p2:
-            'In a major societal crisis, where basic societal functions are not operating, such as during a prolonged power outage in the middle of winter, it is crucial to have this capability.',
+            'Vid en större samhällskris, där grundläggande samhällsfunktioner inte fungerar, till exempel vid ett långvarigt strömavbrott mitt i vintern, är det avgörande att ha denna förmåga.',
         },
       },
     },
