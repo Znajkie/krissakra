@@ -1,6 +1,6 @@
 @font-face {
-  font-family: 'Gotham_book';
-  src: url(./assets/fonts/gotham/GothamBook.ttf);
+  font-family: 'M';
+  src: url(./assets/fonts/DmSans/DMSans-VariableFont_wght.ttf);
 }
 
 .contact__wrapper {
@@ -16,7 +16,6 @@
   align-items: center;
 }
 .contact-form-container {
-  /* font-family: 'Gotham_book'; */
   position: relative;
   display: flex;
   flex-direction: column;
@@ -49,6 +48,7 @@
 .contact-form-container p {
   text-align: center;
   color: #464646;
+   font-family: 'M';
 }
 
 .input-group {
@@ -73,7 +73,7 @@ textarea {
 }
 
 .submit-btn {
-/* font-family: 'Gotham_book'; */
+font-family: 'M';
 display: block;
 padding: 0.7em 1.7em;
 margin:0 0.3em 0.3em 0;

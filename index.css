@@ -8,21 +8,6 @@
   src: url(./assets/fonts/DmSans/DMSans-Italic-VariableFont_wght.ttf);
 }
 
-@font-face {
-  font-family: 'Gotham_bold';
-  src: url(./assets/fonts/gotham/Gotham-Bold.otf);
-}
-
-@font-face {
-  font-family: 'Gotham_book';
-  src: url(./assets/fonts/gotham/GothamBook.ttf);
-}
-
-@font-face {
-  font-family: 'Gotham_light';
-  src: url(./assets/fonts/gotham/Gotham-Light.otf);
-}
-
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -129,6 +114,7 @@ button {
   z-index: 1;
 }
 #bookingBtn {
+  font-family: 'M';
   display: inline-block;
   padding: 0.7em 1.7em;
   margin: 0 0.3em 0.3em 0;
@@ -351,6 +337,7 @@ element.style {
 }
 
 .about__p {
+  font-family: 'M';
   margin: 0 auto;
   max-width: 74rem;
 }
@@ -714,15 +701,7 @@ element.style {
   .overlayImg {
     display: none;
   }
-  .title-text,
-  .title-text__bottom {
-    font-size: 18px;
-    color: rgb(255, 255, 255);
-    text-shadow: -2px -2px 4px rgba(0, 0, 0, 0.4),
-      /* Top-left */ 2px -2px 4px rgba(0, 0, 0, 0.4),
-      /* Top-right */ -2px 2px 4px rgba(0, 0, 0, 0.4),
-      /* Bottom-left */ 2px 2px 4px rgba(0, 0, 0, 0.4);
-  }
+
   .video-container {
     position: relative;
     width: 100%;
@@ -809,13 +788,9 @@ element.style {
   margin: 0;
 }
 
-.about-section {
-  height: 2000px
+
+.about-grid-container {
+  margin-top: 0rem;
 }
-
-
-    .about-grid-container {
-        margin-top: 0rem;
-    }
 
 }
