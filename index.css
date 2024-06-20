@@ -414,12 +414,12 @@ button {
 
 .checkmark {
   color: rgb(42, 255, 131);
-  text-shadow: 1px 1px 2px black;
+  text-shadow: 1px 1px 2px rgb(138, 137, 137);
   margin-right: 10px;
 }
 
 .product_list {
-  border-bottom: 2px solid #ff505027;
+  /* border-bottom: 2px solid #ff505027; */
   padding-bottom: 10px;
   margin-bottom: 20px;
 }
