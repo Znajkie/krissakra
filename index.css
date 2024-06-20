@@ -328,14 +328,14 @@ element.style {
   display: flex;
   flex-wrap: wrap;
   scroll-margin-top: 132px;
-  padding-top: 3rem;
-  padding-bottom: 2rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
   gap: 20px;
 }
 
 .about__section1 {
   padding: 1rem;
-  /* font-size: 16px; */
+  padding-bottom: 2rem;
   margin: 0 auto;
 }
 
@@ -614,10 +614,6 @@ element.style {
     padding-top: 0;
   }
 
-  .about-grid-container {
-    margin-top: 2rem;
-  }
-
   .container {
     padding: 2rem;
   }
@@ -703,11 +699,8 @@ element.style {
 
   .about-image {
     margin: 0 auto;
-  }
-
-  .about-image {
-    height: 18rem;
-    width: 25rem;
+    height: 18;
+    max-width: 26.5rem;
   }
 
   .overlayImg {
@@ -720,7 +713,7 @@ element.style {
     text-shadow: -2px -2px 4px rgba(0, 0, 0, 0.4),
       /* Top-left */ 2px -2px 4px rgba(0, 0, 0, 0.4),
       /* Top-right */ -2px 2px 4px rgba(0, 0, 0, 0.4),
-      /* Bottom-left */ 2px 2px 4px rgba(0, 0, 0, 0.4); /* Bottom-right */
+      /* Bottom-left */ 2px 2px 4px rgba(0, 0, 0, 0.4);
   }
   .video-container {
     position: relative;
@@ -793,15 +786,28 @@ element.style {
   }
 }
 
-@media only screen and (max-width: 440px) {
+@media only screen and (max-width: 450px) {
   .about-image {
     display: fill;
+    width: 20rem;
   }
 }
 
 
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 350px) {
 .about-image {
-  max-width: 15rem;
+  max-width: 18rem;
+  padding: 0;
+  margin: 0;
 }
+
+.about-section {
+  height: 2000px
+}
+
+
+    .about-grid-container {
+        margin-top: 0rem;
+    }
+
 }
