@@ -325,18 +325,19 @@ element.style {
 
 /*! end of Menu line */
 .about-grid-container {
-  background-color: #efefef;
+  background-color: #ffffff;
   display: flex;
   flex-wrap: wrap;
   scroll-margin-top: 132px;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+  padding-bottom: 3rem;
   gap: 20px;
 }
 
 .about__section1 {
   width: 100%;
   padding: 1rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
   margin: 0 auto;
 }
 
@@ -402,17 +403,24 @@ element.style {
 /* Vilka steg tar text */
 .about {
   display: flex;
+  justify-content: space-evenly;
+  background-color: #e6e6e6;
+  box-shadow: 0px 12px 19px 26px rgba(0,0,0,0.1);
+  width: 100%;
+  
+  display: flex;
   margin: 0 auto;
-  padding-top: 4rem;
-  padding: 1rem;
   font-family: 'M'; 
   font-size: 20px;
 }
 
 .about-content {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 4rem;
+  padding-bottom: 3rem;
   display: flex;
   flex-wrap: nowrap;
-  width: 100%;
 }
 
 /* Vad innebär krissäkra BILD*/
