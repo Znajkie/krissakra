@@ -128,15 +128,14 @@ ul {
   list-style-type: none;
 }
 
-a {
+.site-nav a {
   font-family: 'M';
   font-weight: 700;
   text-decoration: none;
   color: #000000a6;
 }
 
-a:hover,
-#languageBtn:hover {
+.site-nav a:hover {
   color: #020202;
 }
 
@@ -545,6 +544,11 @@ button {
 
 .footer-section p {
   font-size: 12px;
+}
+
+.footer-contact-link {
+  text-decoration: none;
+  color: rgb(28, 28, 28);
 }
 
 /******* 1250px  ******************************************************************************/
