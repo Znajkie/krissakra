@@ -51,8 +51,8 @@ i18next.init(
           product_list3_header: 'Contingency plan',
           product_list4_header: 'Collective preparedness',
           product_list5_header: 'Equipment',
-          product_list6_header: 'Krissäkra certification',
-          product_list7_header: 'Safety and capability',
+          product_list6_header: 'Safety and capability',
+          product_list7_header: 'Krissäkra certification',
           about__p_header: 'Krissäkra certification?',
           about__p1:
             'Our certification is a mark of quality that demonstrates your fundamental ability to protect both tangible and intangible assets.',
@@ -112,9 +112,9 @@ i18next.init(
           product_list3_header: 'Beredskapsplan',
           product_list4_header: 'Samberedskap',
           product_list5_header: 'Utrustning',
-          product_list6_header: 'Krissäkra certifiering',
-          product_list7_header: 'Trygghet och förmåga',
-          about__p_header: 'Krissäkra certification?',
+          product_list6_header: 'Trygghet och förmåga',
+          product_list7_header: 'Krissäkra certifiering',
+          about__p_header: 'Krissäkra certifiering?',
           about__p1:
             'Vår certifiering är en kvalitetsstämpel som visar att ni har den grundläggande förmågan att skydda både materiella och immateriella värden.',
           about__p2:
